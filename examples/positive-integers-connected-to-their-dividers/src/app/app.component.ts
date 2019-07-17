@@ -27,8 +27,8 @@ export class AppComponent {
      * Our processing loop would look something like:
      *
      * 1
-     *  1 * 2 <= 3 :: Increment link count on the node containing 1 and the node containing 2 and create a Link
-     *  1 * 3 <= 3 :: Increment link count on the node containing 1 and the node containing 3 and create a Link
+     *  1 * 2 <= 3 :: Increment link count on the node containing 1 and the node containing 2; create a Link between 1 and 2
+     *  1 * 3 <= 3 :: Increment link count on the node containing 1 and the node containing 3; create a Link between 1 and 3
      *
      * 2
      *  2 * 2 > 3 therefore we will not increment link counts or create a link
