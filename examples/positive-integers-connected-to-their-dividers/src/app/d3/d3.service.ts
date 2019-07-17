@@ -1,4 +1,5 @@
-import { Injectable, EventEmitter } from '@angular/core';
+import { Injectable } from '@angular/core';
+// Our graph consists of Nodes and Links, so we will need to define models for them
 import { Node, Link, ForceDirectedGraph } from './models';
 import * as d3 from 'd3';
 
@@ -63,6 +64,8 @@ export class D3Service {
   */
   getForceDirectedGraph(nodes: Node[], links: Link[], options: { width, height }) {
     const sg = new ForceDirectedGraph(nodes, links, options);
+
+    // Return a force directed graph instance
     return sg;
   }
 }
