@@ -21,6 +21,10 @@ import { Node } from '../../../d3';
   `,
   styleUrls: ['./node-visual.component.css']
 })
+
+/**
+ * This component displays a circle containing the ID of the node
+ */
 export class NodeVisualComponent {
   @Input('nodeVisual') node: Node;
 }
