@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+// Add HttpClientModule so that our HttpClient can work
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
 
@@ -12,7 +14,7 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
