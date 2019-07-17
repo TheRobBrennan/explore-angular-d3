@@ -10,8 +10,8 @@ The `responsive-bar-graph` example was based on the [tutorial](https://medium.co
 
 ![examples/responsive-bar-graph/demo.gif](examples/responsive-bar-graph/demo.gif)
 
-### Positive integers under 300 connected to their dividers
+### Nodes and links force directed graph
 
-The `positive-integers-connected-to-their-dividers` was based on the [tutorial](https://medium.com/netscape/visualizing-data-with-angular-and-d3-209dde784aeb) available at [Visualizing Data with Angular and D3](https://medium.com/netscape/visualizing-data-with-angular-and-d3-209dde784aeb)
+The `nodes-and-links-force-directed-graph` was based on the [tutorial](https://medium.com/netscape/visualizing-data-with-angular-and-d3-209dde784aeb) available at [Visualizing Data with Angular and D3](https://medium.com/netscape/visualizing-data-with-angular-and-d3-209dde784aeb)
 
-![examples/positive-integers-connected-to-their-dividers/demo.gif](examples/positive-integers-connected-to-their-dividers/demo.gif)
+![examples/nodes-and-links-force-directed-graph/demo.gif](examples/nodes-and-links-force-directed-graph/demo.gif)
