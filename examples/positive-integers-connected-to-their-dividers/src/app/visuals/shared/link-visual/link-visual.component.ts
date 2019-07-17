@@ -14,6 +14,10 @@ import { Link } from '../../../d3';
   `,
   styleUrls: ['./link-visual.component.css']
 })
+
+/**
+ * This component displays a line between two nodes that are linked
+ */
 export class LinkVisualComponent  {
   @Input('linkVisual') link: Link;
 }
