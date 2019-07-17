@@ -1,5 +1,5 @@
 import { Component, Input, ChangeDetectorRef, HostListener, ChangeDetectionStrategy, OnInit, AfterViewInit } from '@angular/core';
-import { D3Service, ForceDirectedGraph, Node } from '../../d3';
+import { D3Service, ForceDirectedGraph } from '../../d3';
 
 @Component({
   selector: 'graph',
@@ -15,6 +15,15 @@ import { D3Service, ForceDirectedGraph, Node } from '../../d3';
   `,
   styleUrls: ['./graph.component.css']
 })
+
+/**
+ * This is the root component that will generate the graph and bind it to the document
+ *
+ * We want to be able to use this component like:
+ *  <graph [nodes]="nodes" [links]="links"></graph>
+ *
+ * This component's job is to simply take the supplied nodes and links and create an instance of a ForceDirectedGraph
+ */
 export class GraphComponent implements OnInit, AfterViewInit {
   @Input('nodes') nodes;
   @Input('links') links;
@@ -27,6 +36,11 @@ export class GraphComponent implements OnInit, AfterViewInit {
   }
 
 
+  /**
+   * Notice how this shared graph component is consuming our D3 service and has a ref to a change detector
+   * @param d3Service
+   * @param ref
+   */
   constructor(private d3Service: D3Service, private ref: ChangeDetectorRef) {}
 
   ngOnInit() {
