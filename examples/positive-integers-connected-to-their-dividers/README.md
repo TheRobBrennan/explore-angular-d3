@@ -1,5 +1,7 @@
 # PositiveIntegersConnectedToTheirDividers
 
+The `positive-integers-connected-to-their-dividers` was based on the [tutorial](https://medium.com/netscape/visualizing-data-with-angular-and-d3-209dde784aeb) available at [Visualizing Data with Angular and D3](https://medium.com/netscape/visualizing-data-with-angular-and-d3-209dde784aeb)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
 
 ## Development server
